@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <!-------------------------------------------------------custom css------------------------------------------------------------->
+    <link rel="stylesheet" href="./css/Booking.css">
+    <!-------------------------------------------------------custom css------------------------------------------------------------->
+
+    <!-------------------------------------------------------favicon link------------------------------------------------------------->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-------------------------------------------------------favicon link------------------------------------------------------------->
+
+    <!-------------------------------------------------------bootstrap css link------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap cdn  -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
+    <!-------------------------------------------------------bootstrap css link------------------------------------------------------------->
+
+    <!-------------------------------------------------------aos link------------------------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-------------------------------------------------------aos link------------------------------------------------------------->
+
+    <!-------------------------------------------------------fontawesome link------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------------------------------------------------fontawesome link------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------googlefont link------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800;1,900&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-------------------------------------------------------googlefont link------------------------------------------------------------->
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <img id="mf-logo" src="./images/MF-LOGO.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"
+                        style="font-size:large; font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large; font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " aria-current="page" href="../Gallery/gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large; font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " aria-current="page" href="./Booking.html">BOOKING</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large;font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " href="../Purchase/purchase.html">PURCHASE</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large;font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " href="../Aboutus/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large;font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " href="../Contactus/contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item"
+                        style="font-size:large;font-family: Georgia, 'Times New Roman', Times, serif;text-transform: uppercase;">
+                        <a class="nav-link " href="../Register/signup.html">REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-------------------------------------------------------Booking cards---------------------------------------------------------------------->
+    <section>
+        <div class="container">
+            <div class="title text-center mt-5">
+                <h1 class="position-relative" style="font-family: Georgia, 'Times New Roman', Times, serif;">BOOKING
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="product-list d-flex flex-wrap justify-content-center mt-3">
+                        <ul class="list-inline">
+                            <li class="list-inline-item btn btn-outline-warning m-2 text-dark" data-filter="*">All</li>
+                            <li class="list-inline-item btn btn-outline-warning m-2 text-dark" data-filter=".luxury">
+                                LUXURY YACHTS</li>
+                            <li class="list-inline-item btn btn-outline-warning m-2 text-dark" data-filter=".sailing">
+                                SAILING BOATS</li>
+                            <li class="list-inline-item btn btn-outline-warning m-2 text-dark" data-filter=".fishing">
+                                FISHING BOATS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="product-item">
+                    <div class="collection-list mt-4 row gx-0 gy-3">
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/files/2020/11/b3933040-1f73-11eb-aea0-39fb4a27baf8-Azzam-G.Romero-1.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">AZZAM ROMERO</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$31,000</span><span
+                                    class="fw-bold">$24,800</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/files/2021/11/7575a8f0-3e4a-11ec-bdc1-b5f2c9d7cbf5-Dilbar-Guillaume-Plisson-03.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">GUILLAUME PLISSON</p>
+                                <span class="fw-bold">$28,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/files/2021/08/43d64ae0-f8f7-11eb-9f95-b730e48fac10-Rising-Sun-credit-TVO-2.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">RISING SUN</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$18,000</span><span
+                                    class="fw-bold">$14,400</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/convert/images/20160317/1-105109l-2560x1440.jpg/r%5Bwidth%5D=1920/1-105109l-2560x1440.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">TOPAZ</p>
+                                <span class="fw-bold">$24,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/images/20160905/2-71907l-2560x1440.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">THE LURSSEN</p>
+                                <span class="fw-bold">$25,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/bi_prd/bi/library_images/RWkrcQKR6SamXtfApTPN_lady-moura-.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">LADY MOURA</p>
+                                <span class="fw-bold">$26,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/convert/files/2021/05/cb78e590-b322-11eb-b59b-bfd1177c77f4-eclipse-exterior-do-not-use-outside-feature.jpg/r%5Bwidth%5D=1920/cb78e590-b322-11eb-b59b-bfd1177c77f4-eclipse-exterior-do-not-use-outside-feature.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">ECLIPSE</p>
+                                <span class="fw-bold">$35,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item luxury cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://www.filepicker.io/api/file/9QKjyiYvR3iJVRX6BHfF"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">SUNRAYS</p>
+                                <span class="fw-bold">$28,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/21/2020/10/sailing-superyacht-concepts-Lobanov-Designs-Phoenicia.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Hero Sailing Yacht</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$19,000</span><span
+                                    class="fw-bold">$15,200</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/convert/files/2021/06/efc0d990-d35b-11eb-9cbf-27db2ff150d1-Maltese-Falcon-extra-sea.jpg/r%5Bwidth%5D=1920/efc0d990-d35b-11eb-9cbf-27db2ff150d1-Maltese-Falcon-extra-sea.jpg"
+                                    class="product-image">
+                            </div>
+
+                            <div class=" text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Maltese Falcon</p>
+                                <span class="fw-bold">$21,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/files/2020/11/6dbb30d0-1dc1-11eb-a403-f319cddb765a-Black-Pearl-6.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Black Pearl</p>
+                                <span class="fw-bold">$23,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/bi_prd/bi/library_images/zW6KPwf9Qjmocd1ssABJ_Vertigo-luxury-superyacht-sailing.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Vertigo</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$30,000</span><span
+                                    class="fw-bold">$24,000</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://cdn.boatinternational.com/convert/images/20160225/1-101795l-2560x1440.jpg/r%5Bwidth%5D=1920/1-101795l-2560x1440.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">White Sail</p>
+                                <span class="fw-bold">$15,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://d2oknibonqa3h8.cloudfront.net/wp-content/uploads/2022/11/AQUIJO-14.jpeg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Aquijo</p>
+                                <span class="fw-bold">$36,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://www.magnumnautica.com/Portals/0/EasyGalleryImages/213/653/0-Anetta_Exterior_Profile_Main_YachtIN.jpg?w=1200&h=600&mode=crop"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Anetta</p>
+                                <span class="fw-bold">$38,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item sailing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://www.charteranddreams.com/media/products/528/a.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Anetta 2</p>
+                                <span class="fw-bold">$27,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/cornelia-marie-deadliest-catch-1560270447.png?crop=1xw:0.7588832487309645xh;center,top&resize=1200:*"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Cornelia Marie</p>
+                                <span class="fw-bold">$15,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://live.staticflickr.com/5141/5632840959_20267c8f76_b.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">North Western</p>
+                                <span class="fw-bold">$22,000 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/time-bandit-boat-deadliest-catch-jpg-1556201956.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Bandit</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$24,500</span><span
+                                    class="fw-bold">$19,200</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://travelprofessionalnews.com/wp-content/uploads/2017/05/4-photo-courtesy-of-Commercial-Fishing-Adventures.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Aleutian Ballad</p>
+                                <span class="fw-bold">$20,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://i.ytimg.com/vi/DkzBaBpHai8/maxresdefault.jpg" class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Hard Merchandise</p>
+                                <span class="fw-bold">$16,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://www.shipspotting.com/photos/big/7/6/4/1936467.jpg?cb=0"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Bering Prowler</p>
+                                <span class="fw-bold" style="text-decoration: line-through;">$29,000</span><span
+                                    class="fw-bold">$23,200</span><br><span class="fw-bold">Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://fishingnews.co.uk/wp-content/uploads/2020/01/BOTW-386a-820x547.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Adenia LK-193</p>
+                                <span class="fw-bold">$21,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 p-2 item fishing cardhover">
+                            <div class="collection-img position-relative">
+                                <img src="https://fishingnews.co.uk/wp-content/uploads/2015/11/BOTW-192-2-1021x580-v4-820x547.jpg"
+                                    class="product-image">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="card-title text-capitalize my-1">Benarkle II</p>
+                                <span class="fw-bold">$22,500 Per Day</span>
+                                <br>
+                                <a href="../Contactus/contactus.html"><input id="buynowbtn" type="button"
+                                        value="Book now" class="btn mt-2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------Booking cards---------------------------------------------------------------------->
+
+    <!-------------------------------------------------------modal---------------------------------------------------------------------->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalProductImage" src="" alt="Product" class="modal-product-image mx-auto">
+                    <h1 class="h1_title">Description</h1>
+                    <div id="modalProductDescription" class="modal-product-description">
+                        <p>Premium quality materials for durability and longevity</p>
+                        <p>Non-slip surface for enhanced stability and grip</p>
+                        <p>Comfortable cushioning for joint support</p>
+                        <p>Lightweight and portable design</p>
+                        <p>Suitable for yoga, stretching, Pilates, and other exercises</p>
+                        <p>Easy to clean and maintain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------modal---------------------------------------------------------------------->
+
+    <!-- footer -->
+    <footer class="footer bg-black mt-5">
+        <div class="container-col">
+            <div class="row d-flex flex-wrap-wrap">
+                <div class="footer-col">
+                    <h4>Site Map <img src="" alt=""></h4>
+                    <ul style="list-style: none;">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                        <li><a href="../Booking/Booking.html">Booking</a></li>
+                        <li><a href="../Purchase/purchase.html">Purchase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Site Map 2</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="../Aboutus/aboutus.html">About Us</a></li>
+                        <li><a href="../Contactus/contactus.html">Contact Us</a></li>
+                        <li><a href="../Register/signup.html">Register</a></li>
+                        <!-- <li><a href="product.html">Gym Equipment</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="../Aboutus/aboutus.html#services">Wine Bar</a></li>
+                        <li><a href="../Aboutus/aboutus.html#services">Professional Chef</a></li>
+                        <li><a href="../Aboutus/aboutus.html#services">Personal Swimming Pool</a></li>
+                        <li><a href="../Aboutus/aboutus.html#services">Gym</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/settings/account?lang=en" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account?trk=registration-frontend"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="../Register/checkUser.js"></script>
+    <!-------------------------------------------------------aos and modal data js------------------------------------------------------------------->
+    <script src="./js/Booking.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-------------------------------------------------------aos and modal data js------------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------jquery cdn ---------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-------------------------------------------------------jquery cdn ---------------------------------------------------------------->
+
+    <!-------------------------------------------------------jquery scroll up script---------------------------------------------------------------->
+    <script src="./js/script.js"></script>
+
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true,
+            });
+        });
+    </script>
+    <!-------------------------------------------------------jquery scroll up script---------------------------------------------------------------->
+
+    <!-------------------------------------------------------isotope cdn and script---------------------------------------------------------------->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        $('.product-item').isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+        $('.product-list ul li').click(function () {
+            $('.product-list ul li').removeClass('btn');
+            $(this).addClass('btn');
+            var selector = $(this).attr('data-filter');
+            $(".product-item").isotope({
+                filter: selector
+            });
+            return false
+        });
+    </script>
+    <!-------------------------------------------------------isotope cdn and script---------------------------------------------------------------->
+    <!-------------------------------------------------------bootstrap js link---------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-------------------------------------------------------bootstrap js link---------------------------------------------------------------->
+</body>
+</html>
